@@ -11,13 +11,15 @@ import java.io.IOException;
 
 
 public class Main {
+    private static final int COLUMN = 40;
+    private static final int ROW = 20;
     public static void main(String[] args) throws IOException {
-        Terminal terminal = new DefaultTerminalFactory().setInitialTerminalSize(new TerminalSize(100,50)).createTerminal();
+        Terminal terminal = new DefaultTerminalFactory().setInitialTerminalSize(new TerminalSize(COLUMN,ROW)).createTerminal();
         Screen screen = new TerminalScreen(terminal);
         screen.startScreen();
 
-        Game game = new Game();
-        game.start(screen);
+        Game game = new Game(screen);
+        game.start();
 
     }
 }

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="first initial, create Game, Snake, Food and setSnake in screen" />
+    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="add refresh">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/DirectionValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -78,12 +85,20 @@
       <option name="project" value="LOCAL" />
       <updated>1683624087044</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add refresh">
+      <created>1683638203701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683638203701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first initial, create Game, Snake, Food and setSnake in screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="first initial, create Game, Snake, Food and setSnake in screen" />
+    <MESSAGE value="add refresh" />
+    <option name="LAST_COMMIT_MESSAGE" value="add refresh" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
