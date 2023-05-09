@@ -4,6 +4,8 @@ import com.googlecode.lanterna.TextCharacter;
 import com.googlecode.lanterna.screen.Screen;
 import sk.pavlovsky.objects.Snake;
 
+import java.io.IOException;
+
 public class Game {
     private Screen screen;
     private boolean running= false;
@@ -30,6 +32,11 @@ public class Game {
 
     private void render() {
         setSnake();
+        try {
+            this.screen.refresh();
+        }catch (IOException e) {
+            throw new RuntimeException("It is not possible to render");
+        }
 
     }
     public void setSnake() {
