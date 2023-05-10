@@ -14,7 +14,7 @@ import java.util.Random;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.Instant;
-import sk.pavlovsky.Main.*;
+
 
 
 import static sk.pavlovsky.input.Direction.*;
@@ -92,6 +92,10 @@ public class Game {
 
     private void update() throws IOException {
         Direction direction = input();
+        if (direction== QUIT) {
+            this.running= false;
+            this.noInput=false;
+        }
         if (direction!=Direction.NONE){
             valueOfDirection= direction;
         }
@@ -129,7 +133,8 @@ public class Game {
             setFood();
             firstApple= false;}
         while(noInput){
-            checkColisions();
+//            checkColisions();
+            checkBorder();
             setFood();
             checkFood();
             Instant now = Instant.now();
@@ -147,15 +152,34 @@ public class Game {
                 this.lastloop = now;
             }}}
 
-    public void checkColisions() {
-        if (this.snake.getX()>Main.getCOLUMN() || this.snake.getY()>Main.getROW()
-                ||this.snake.getX()<0 || this.snake.getY()<0 ){
-            this.running = false;
-            this.noInput = false;
-        }
+//    public void checkColisions() {
+//        if (this.snake.getX()>Main.getCOLUMN() || this.snake.getY()>Main.getROW()
+//                ||this.snake.getX()<0 || this.snake.getY()<0 ){
+//            this.running = false;
+//            this.noInput = false;
+//        }
+//    }
+    public void checkBorder(){
+        if (this.snake.getX()>Main.getCOLUMN()) {
+            this.snake.setX(0);
+        }else if(this.snake.getX()<0) {
+            this.snake.setX(Main.getCOLUMN());
+        }else if(this.snake.getY()<0) {
+            this.snake.setY(Main.getROW());
+        }else if (this.snake.getY()>Main.getROW()) {
+            this.snake.setY(0);
     }
+        for (int i = 0; i < 2+getBodyParts(); i++) {
+            if (getBodyParts()>=4){
+                if (i >= (getBodyParts())){
+                    break;
+                }else if (this.snake.getX() == this.xtail.get(i) && this.snake.getY()==this.ytail.get(i)) {
+                    this.noInput = false;
+                    this.running= false;
+            }
+    }}}
 
-    public void checkFood() throws IOException {
+    public void checkFood(){
         if(this.food.getFoodX()== this.snake.getX()&& this.food.getFoodY() ==this.snake.getY()){
             setBodyParts(1);
             newFood();
@@ -173,5 +197,6 @@ public class Game {
             this.screen.setCharacter(this.xtail.get(i), this.ytail.get(i), new TextCharacter('@'));
              }
          }
-    }
+
+}
 

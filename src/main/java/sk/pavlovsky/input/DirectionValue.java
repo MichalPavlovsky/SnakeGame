@@ -24,6 +24,12 @@ public class DirectionValue {
                 return LEFT;
             case ArrowRight:setFirstDirection(false);
                 return RIGHT;
+            case Character: {
+                Character character = keyStroke.getCharacter();
+                switch (character) {
+                    case 'q': return QUIT;
+                }
+            }
             default:return NONE;
         }
 

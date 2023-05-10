@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="add Direction, Input, Move,">
+    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="eat food, bodyParts, rule cannot go through border">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/DirectionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/DirectionValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/objects/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/objects/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/objects/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/objects/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +97,22 @@
       <option name="project" value="LOCAL" />
       <updated>1683645178666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="eat food, bodyParts, rule cannot go through border">
+      <created>1683703399165</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683703399165</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first initial, create Game, Snake, Food and setSnake in screen" />
     <MESSAGE value="add refresh" />
     <MESSAGE value="add Direction, Input, Move," />
-    <option name="LAST_COMMIT_MESSAGE" value="add Direction, Input, Move," />
+    <MESSAGE value="eat food, bodyParts, rule cannot go through border" />
+    <option name="LAST_COMMIT_MESSAGE" value="eat food, bodyParts, rule cannot go through border" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
