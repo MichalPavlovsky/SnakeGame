@@ -6,6 +6,7 @@ import com.googlecode.lanterna.input.KeyStroke;
 import javax.swing.*;
 
 
+import static sk.pavlovsky.Game.setFirstDirection;
 import static sk.pavlovsky.input.Direction.*;
 
 public class DirectionValue {
@@ -15,13 +16,13 @@ public class DirectionValue {
         }
         KeyType keyType = keyStroke.getKeyType();
         switch (keyType) {
-            case ArrowUp:
+            case ArrowUp: setFirstDirection(false);
                 return UP;
-            case ArrowDown:
+            case ArrowDown: setFirstDirection(false);
                 return DOWN;
-            case ArrowLeft:
+            case ArrowLeft: setFirstDirection(false);
                 return LEFT;
-            case ArrowRight:
+            case ArrowRight:setFirstDirection(false);
                 return RIGHT;
             default:return NONE;
         }
