@@ -13,6 +13,7 @@ import java.io.IOException;
 public class Main {
     private static int COLUMN = 40;
     private static int ROW = 20;
+    private static int ROW2 = 30;
 
     public static int getCOLUMN() {
         return COLUMN;
@@ -23,7 +24,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        Terminal terminal = new DefaultTerminalFactory().setInitialTerminalSize(new TerminalSize(COLUMN,ROW)).createTerminal();
+        Terminal terminal = new DefaultTerminalFactory().setInitialTerminalSize(new TerminalSize(COLUMN,ROW2)).createTerminal();
         Screen screen = new TerminalScreen(terminal);
         screen.startScreen();
 

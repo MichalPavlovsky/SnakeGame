@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="eat food, bodyParts, rule cannot go through border">
+    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="add Colisions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/DirectionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/input/DirectionValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683703399165</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Colisions">
+      <created>1683709559982</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683709559982</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,7 +119,8 @@
     <MESSAGE value="add refresh" />
     <MESSAGE value="add Direction, Input, Move," />
     <MESSAGE value="eat food, bodyParts, rule cannot go through border" />
-    <option name="LAST_COMMIT_MESSAGE" value="eat food, bodyParts, rule cannot go through border" />
+    <MESSAGE value="add Colisions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Colisions" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
