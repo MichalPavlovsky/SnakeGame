@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="add Colisions">
+    <list default="true" id="b44dc066-ec40-400e-8698-1c07d32eb68f" name="Changes" comment="add GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/pavlovsky/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Program Files/Projekty/SnakeGame"
   }
 }]]></component>
   <component name="RunManager">
@@ -111,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683709559982</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add GUI">
+      <created>1683747476913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683747476913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,7 +126,8 @@
     <MESSAGE value="add Direction, Input, Move," />
     <MESSAGE value="eat food, bodyParts, rule cannot go through border" />
     <MESSAGE value="add Colisions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Colisions" />
+    <MESSAGE value="add GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add GUI" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

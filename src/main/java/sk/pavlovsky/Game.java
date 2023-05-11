@@ -37,8 +37,7 @@ public class Game {
     private LinkedList<Integer> xtail;
     private LinkedList<Integer> ytail;
     private Direction valueOfDirection;
-    private Instant time;
-    private boolean firstStart=true;
+
 
     public Integer getScoreofFood() {
         return scoreofFood;
@@ -165,7 +164,6 @@ public class Game {
             firstApple = false;
         }
         while (noInput) {
-//            checkColisions();
             setLine();
             renderGUI();
             checkBorder();
@@ -188,13 +186,6 @@ public class Game {
         }
     }
 
-    //    public void checkColisions() {
-//        if (this.snake.getX()>Main.getCOLUMN() || this.snake.getY()>Main.getROW()
-//                ||this.snake.getX()<0 || this.snake.getY()<0 ){
-//            this.running = false;
-//            this.noInput = false;
-//        }
-//    }
     public void checkBorder() {
         if (this.snake.getX() > Main.getCOLUMN()) {
             this.snake.setX(0);
