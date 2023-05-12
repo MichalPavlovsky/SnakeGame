@@ -1,6 +1,7 @@
 package sk.pavlovsky;
 
 import com.googlecode.lanterna.TextCharacter;
+import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.screen.Screen;
 import sk.pavlovsky.input.Direction;
 import sk.pavlovsky.input.DirectionValue;
@@ -219,14 +220,15 @@ public class Game {
     }
 
     public void setFood() {
-        this.screen.setCharacter(this.food.getFoodX(), this.food.getFoodY(), new TextCharacter('o'));
+        this.screen.setCharacter(this.food.getFoodX(), this.food.getFoodY(), new TextCharacter('O').withForegroundColor(TextColor.ANSI.RED));
+
     }
 
     public void setSnake() {
-        this.screen.setCharacter(this.snake.getX(), this.snake.getY(), new TextCharacter('@'));
+        this.screen.setCharacter(this.snake.getX(), this.snake.getY(), new TextCharacter('#').withForegroundColor(TextColor.RGB.ANSI.GREEN_BRIGHT));
 
         for (int i = 0; i < 2 + getBodyParts(); i++) {
-            this.screen.setCharacter(this.xtail.get(i), this.ytail.get(i), new TextCharacter('@'));
+            this.screen.setCharacter(this.xtail.get(i), this.ytail.get(i), new TextCharacter('#').withForegroundColor(TextColor.RGB.ANSI.GREEN_BRIGHT));
         }
     }
 
@@ -234,7 +236,7 @@ public class Game {
         TextCharacter line[] = TextCharacter.fromString("-");
         for (int j = 0; j < Main.getCOLUMN(); j++) {
             for (TextCharacter i : line) {
-                this.screen.setCharacter(j, Main.getROW() + 1, i);
+                this.screen.setCharacter(j, Main.getROW() + 1, i.withForegroundColor(TextColor.ANSI.BLUE));
             }
         }
 
@@ -248,11 +250,11 @@ public class Game {
         TextCharacter[] text2 = TextCharacter.fromString("Time: " + timer);
         for (int x = 0; x < text.length; x++)
             for (TextCharacter y : text) {
-                this.screen.setCharacter(x, Main.getROW() + 3, text[x]);
+                this.screen.setCharacter(x, Main.getROW() + 3, text[x].withForegroundColor(TextColor.ANSI.MAGENTA));
             }
         for (int x = 0; x < text2.length; x++)
             for (TextCharacter y : text2) {
-                this.screen.setCharacter(x, Main.getROW() + 5, text2[x]);
+                this.screen.setCharacter(x, Main.getROW() + 5, text2[x].withForegroundColor(TextColor.ANSI.YELLOW_BRIGHT));
             }
     }
 }
